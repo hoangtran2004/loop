@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = 0;
+    let b = 1 ;
+    let sum = 0;
+    let temp;
+    for(let i = 0 ; i % 5 ; i ++) {
+        document.write(a + ' ')
+        sum += a;
+        temp = a + b;
+        a = b;
+        b = temp
+        if (a%5) {
+            alert('So dau tien trong day fibonaci chia het cho 5 la : ' + b)
+            break;
+        }
+    }
+    document.write(sum);
+
+</script>
+</body>
+</html>
